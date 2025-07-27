@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Studio Delhi - your dream home</title>
+    <meta name="description" content="Premium Interior Design Services in Delhi - For Home, Office & Commercial Spaces">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <h2>Design Studio Delhi</h2>
+                    <span class="tagline">सुंदर स्थान बनाते हैं</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact US</a></li>
+                    <li><a href="bookingnow.html" class="btn btn--primary btn--sm" id="bookingnowbtn">Book Now</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero ">
+        <div class="container" style="z-index: 9;">
+            <div class="hero-content">
+                <h1 class="hero-title">Transform your space into <span> your dream Home</span></h1>
+                <p class="hero-subtitle">Premium Interior Design Services in Delhi NCR</p>
+                <div class="hero-buttons">
+                    <a href="bookingnow.html" class="btn btn--primary btn--lg">Get Free Advice</a>
+                    <a href="#portfolio" class="btn btn--outline btn--lg">View Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card card">
+                    <div class="card__body">
+                        <div class="service-icon">🏠</div>
+                        <h3>Residential interior design</h3>
+                        <p>Complete home interior solutions for apartments, villas and independent houses in Delhi NCR</p>
+                    </div>
+                </div>
+                <div class="service-card card">
+                    <div class="card__body">
+                        <div class="service-icon">🏢</div>
+                        <h3>commercial interior design</h3>
+                        <p>Commercial office spaces, retail stores and commercial establishments</p>
+                    </div>
+                </div>
+                <div class="service-card card">
+                    <div class="card__body">
+                        <div class="service-icon">🍳</div>
+                        <h3>modular kitchen design</h3>
+                        <p>Modern, functional kitchen design with premium materials and storage solutions</p>
+                    </div>
+                </div>
+                <div class="service-card card">
+                    <div class="card__body">
+                        <div class="service-icon">🛏️</div>
+                        <h3>bedroom design</h3>
+                        <p>Individual bedroom interior with custom furniture and lighting</p>
+                    </div>
+                </div>
+                <div class="service-card card">
+                    <div class="card__body">
+                        <div class="service-icon">🛋️</div>
+                        <h3>living room design</h3>
+                        <p>Elegant living spaces that reflect your style and lifestyle</p>
+                    </div>
+                </div>
+                <div class="service-card card">
+                    <div class="card__body">
+                        <div class="service-icon">💼</div>
+                        <h3>office interior design</h3>
+                        <p>Productive and inspiring workspace designs for modern businesses</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Our Portfolio</h2>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="residential">Commercial</button>
+                <button class="filter-btn" data-filter="commercial">Resturent</button>
+                <button class="filter-btn" data-filter="kitchen">Kitchen</button>
+                <button class="filter-btn" data-filter="bedroom">Badroom</button>
+                <button class="filter-btn" data-filter="living-room">Living room</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="residential">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Modern Delhi Apartment">
+                    <div class="portfolio-overlay">
+                        <h3>Modern Delhi Apartment</h3>
+                        <p>Contemporary 3BHK Apartment in South Delhi</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="restaurant">
+                    <img src="img/kitchen-design.jpg" alt="Luxury Kitchen Design">
+                    <div class="portfolio-overlay">
+                        <h3>luxury kitchen design</h3>
+                        <p>Premium Modular Kitchen with Island</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="residential">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Corporate Office">
+                    <div class="portfolio-overlay">
+                        <h3>Corporate Office</h3>
+                        <p>Modern Office Spaces in Gurugram</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="bedroom">
+                    <img src="img/modern-bedroom.jpg" alt="Master Bedroom Suite">
+                    <div class="portfolio-overlay">
+                        <h3>Master bedroom suite</h3>
+                        <p>Elegant master bedroom with walk-in closet</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="living-room">
+                    <img src="img/living-room.jpg" alt="Stylish Living Room">
+                    <div class="portfolio-overlay">
+                        <h3>Stylish living room</h3>
+                        <p>contemporary living room with modern furniture</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="commercial">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Boutique Restaurant">
+                    <div class="portfolio-overlay">
+                        <h3>Restaurant</h3>
+                        <p>Upscale restaurant interior in Delhi</p>
+                    </div>
+                </div>
+                <!-- new -->
+                 <div class="portfolio-item" data-category="bedroom">
+                    <img src="img/dining-room.jpg" alt="Master Bedroom Suite">
+                    <div class="portfolio-overlay">
+                        <h3>Master dining-room </h3>
+                        <p>Elegant master bedroom with walk-in closet</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="living-room">
+                    <img src="img/industrial-style-living-room.jpg" alt="Stylish Living Room">
+                    <div class="portfolio-overlay">
+                        <h3>Stylish living room</h3>
+                        <p>contemporary living room with modern furniture</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="kitchen">
+                    <img src="img/modern-modular-kitchen.jpg" alt="Boutique Restaurant">
+                    <div class="portfolio-overlay">
+                        <h3>kitchen-design</h3>
+                        <p>Upscale restaurant interior in Delhi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cost Calculator -->
+    <!-- <section id="calculator" class="calculator">
+        <div class="container">
+            <h2 class="section-title">कॉस्ट कैलकुलेटर</h2>
+            <div class="calculator-form card">
+                <div class="card__body">
+                    <form id="costForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">प्रॉपर्टी प्रकार</label>
+                                <select class="form-control" id="propertyType">
+                                    <option value="residential">आवासीय</option>
+                                    <option value="commercial">वाणिज्यिक</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">कमरों की संख्या</label>
+                                <select class="form-control" id="rooms">
+                                    <option value="1bhk">1BHK</option>
+                                    <option value="2bhk">2BHK</option>
+                                    <option value="3bhk">3BHK</option>
+                                    <option value="4bhk">4BHK+</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">कुल क्षेत्रफल (वर्ग फुट में)</label>
+                                <input type="number" class="form-control" id="area" placeholder="उदाहरण: 1000">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">डिज़ाइन स्टाइल</label>
+                                <select class="form-control" id="style">
+                                    <option value="modern">आधुनिक</option>
+                                    <option value="traditional">पारंपरिक</option>
+                                    <option value="contemporary">समकालीन</option>
+                                    <option value="minimalist">न्यूनतम</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn--primary btn--full-width" onclick="calculateCost()">अनुमानित लागत की गणना करें</button>
+                    </form>
+                    <div id="costResult" class="cost-result hidden">
+                        <h3>अनुमानित लागत</h3>
+                        <div class="cost-breakdown">
+                            <div class="cost-item">
+                                <span>बेस कॉस्ट:</span>
+                                <span id="baseCost">₹0</span>
+                            </div>
+                            <div class="cost-item">
+                                <span>डिज़ाइन फीस:</span>
+                                <span id="designFee">₹0</span>
+                            </div>
+                            <div class="cost-item total">
+                                <span>कुल अनुमानित लागत:</span>
+                                <span id="totalCost">₹0</span>
+                            </div>
+                        </div>
+                        <p class="cost-note">*यह केवल अनुमान है। सटीक कोटेशन के लिए कृपया हमसे संपर्क करें।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+    <div class="container">
+        <h2 class="section-title">Client Feedback</h2>
+        <div class="testimonials-slider">
+            <div class="testimonial-slide active">
+                <div class="testimonial-card card">
+                    <div class="card__body">
+                        <div class="stars">★★★★★</div>
+                        <p>"Amazing work! The team completely understood our vision and delivered far beyond our expectations. Our home now looks absolutely fabulous!"</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-img">
+                                <img src="img/nancy1.jpg" alt="Priya Singh">
+                            </div>
+                            <h4>Priya Singh</h4>
+                            <span>BadarPur 1-BHK apartment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-card card">
+                    <div class="card__body">
+                        <div class="stars">★★★★★</div>
+                        <p>"Professional service and great attention to detail. The office space is now more productive and our employees love the new environment."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-img">
+                                <img src="img/zx3.PNG" alt="Raja Babu">
+                            </div>
+                            <h4>Raja Babu</h4>
+                            <span>Office Interiors in Tuglakabad</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-card card">
+                    <div class="card__body">
+                        <div class="stars">★★★★★</div>
+                        <p>"Excellent quality work and timely delivery. The creativity and expertise of the designer made our dream home a reality."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-img">
+                                <img src="img/sean-min.png" alt="Nibha Gupta">
+                            </div>
+                            <h4>Nibha Gupta</h4>
+                            <span>Villa in Gurugram</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-slide">
+                <div class="testimonial-card card">
+                    <div class="card__body">
+                        <div class="stars">★★★★★</div>
+                        <p>"Excellent quality work and timely delivery. The creativity and expertise of the designer made our dream home a reality."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-img">
+                                <img src="img/cx.png" alt="Nibha Gupta">
+                            </div>
+                            <h4>Manish jha</h4>
+                            <span>Sector-10, Dwarka, Delhi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></div>
+        </div>
+    </div>
+</section>
+    <!-- New testmonial add  -->
+     
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>Design Studio Delhi is a leading interior design company based in Delhi NCR. We have been creating beautiful and functional spaces since 2020.</p>
+                    <p>Our team consists of experienced designers committed to turning your dream into reality. We specialize in both residential and commercial projects.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <h4>5+ Years of Experience</h4>
+                            <p>Extensive experience in interior design</p>
+                        </div>
+                        <div class="feature">
+                            <h4>100+ happy customer</h4>
+                            <p>Successfully completed projects</p>
+                        </div>
+                        <div class="feature">
+                            <h4>certified designer</h4>
+                            <p>Qualified and certified professionals</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                         <img src="img/24586.jpeg" alt="Teams Photos" style="width: 410px; height: 300px; border-radius: 5px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 class="section-title">Online Booking</h2>
+            <div class="booking-form card">
+                <div class="card__body">
+                    <form id="bookingForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Name *</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Mobile No. *</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Email *</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">essential service</label>
+                                <select class="form-control" id="service">
+                                    <option value="residential">Residential Design</option>
+                                    <option value="commercial">Commercial Design</option>
+                                    <option value="kitchen">Kitchen Design</option>
+                                    <option value="bedroom">Bedroom Design</option>
+                                    <option value="living-room">Living Room Design</option>
+                                    <option value="office">Office Design</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">project timeline</label>
+                                <select class="form-control" id="timeline">
+                                    <option value="immediate">Immediately</option>
+                                    <option value="1-month">1 Month</option>
+                                    <option value="2-3-months">2-3 Months</option>
+                                    <option value="6-months">6 Months</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">budget range</label>
+                                <select class="form-control" id="budget">
+                                    <option value="1-3-lakh">₹1-3 लाख</option>
+                                    <option value="3-5-lakh">₹3-5 लाख</option>
+                                    <option value="5-10-lakh">₹5-10 लाख</option>
+                                    <option value="10-lakh-plus">₹10 लाख+</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Consultation Date</label>
+                            <input type="date" class="form-control" id="consultationDate">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Project Details</label>
+                            <textarea class="form-control" id="projectDescription" rows="4" placeholder="Tell us your requirements..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">Submit Booking</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Address</h3>
+                        <p> New Delhi - 110024</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>mobile No.</h3>
+                        <p><a href="tel:+918305198886">+91 8305198886</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@designstudiodelhi.com">rohit@rohit-singh.me</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>WhatsApp No.</h3>
+                        <p><a href="https://wa.me/918305198886" target="_blank">+91 8305198886</a></p>
+                    </div>
+                </div>
+                <div class="contact-form card">
+                    <div class="card__body">
+                        <h3>Send Message</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label class="form-label">Name *</label>
+                                <input type="text" class="form-control" id="contactName" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Email *</label>
+                                <input type="email" class="form-control" id="contactEmail" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="contactSubject">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Message *</label>
+                                <textarea class="form-control" id="contactMessage" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Design Studio Delhi</h3>
+                    <p>Let's make beautiful spaces from 2020</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank">Facebook</a>
+                        <a href="#" target="_blank">Instagram</a>
+                        <a href="#" target="_blank">WhatsApp</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Link</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Residential Design</a></li>
+                        <li><a href="#services">Commercial Design</a></li>
+                        <li><a href="#services">Kitchen Design</a></li>
+                        <li><a href="#services">Office Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Lajpat Nagar II, New Delhi</p>
+                    <p>+91 8305198886</p>
+                    <p>rohit@rohit-singh.me</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Design Studio Delhi.  All rights reserved।</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal hidden">
+        <div class="modal-content">
+            <h3>Success!</h3>
+            <p id="successMessage">Your message has been sent successfully. We will contact you shortly।</p>
+            <button class="btn btn--primary" onclick="closeModal()">Ok</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
