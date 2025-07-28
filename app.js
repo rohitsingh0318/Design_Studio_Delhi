@@ -370,7 +370,7 @@ function initHeaderScroll() {
 function initWhatsAppButton() {
     const whatsappButton = document.createElement('div');
     whatsappButton.innerHTML = `
-        <a href="https://wa.me/8305198886?text=${encodeURIComponent('Hii! I need information about interior design।')}" 
+        <a href="https://wa.me/+91 8305198886?text=${encodeURIComponent('Hii! I need information about interior design।')}" 
            target="_blank" 
            style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; background: #25D366; color: white; border-radius: 50px; padding: 15px 20px; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: transform 0.3s ease; font-weight: 500; display: flex; align-items: center; gap: 8px;"
            onmouseover="this.style.transform='scale(1.05)'"
