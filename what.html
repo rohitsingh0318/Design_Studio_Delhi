@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp Button Example</title>
+    <style>
+      .whatsapp-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        background: #25d366;
+        color: white;
+        border-radius: 50px;
+        padding: 15px 20px;
+        text-decoration: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease; /* Smooth transition for transform */
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .whatsapp-button:hover {
+        transform: scale(1.05); /* Scale on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to our site!</h1>
+    <p>We provide excellent interior design services.</p>
+
+    <a
+      href="https://wa.me/+918305198886?text='Hii! I need information about interior design।'"
+      target="_blank"
+      class="whatsapp-button"
+    >
+      📱 WhatsApp
+    </a>
+  </body>
+</html>
