@@ -56,14 +56,13 @@
         background:#fff;
         padding:15px;
         border-radius:10px;
-        /* max-width:90vw;
-        max-height:90vh; */
+        max-width:90vw;
+        max-height:90vh;
         box-shadow: 0 8px 48px rgba(54,54,154,0.08);
         display:flex;
         flex-direction:column;
         align-items:center;
         position: relative;
-        width: 80%;
     }
     .modal-content img { max-width:80vw; max-height:60vh; border-radius:8px;}
     .modal-close {
@@ -91,8 +90,7 @@
                 <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="index.html">Services</a></li>
-                    <!-- <li><a href="index.html">Portfolio</a></li> -->
-                    <li><a href="#">Gallery</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="index.html">About Us</a></li>
                     <li><a href="index.html">Contact US</a></li>
                     <li><a href="bookingnow.html" class="btn btn--primary btn--sm">Book Now</a></li>
@@ -109,9 +107,9 @@
 
     <!-- MAIN GALLERY SECTION -->
     <main>
-        <h1>Gallery...</h1>
+         <h1 style="font-size:2em; text-align:center;">Gallery</h1>
         <section class="gallery-section" id="gallery-section">
-            <h1 style="font-size:2em; text-align:center;">Gallery To View my all Design</h1>
+            <h1 style="font-size:2em; text-align:center;">Gallery</h1>
             <div class="gallery-grid" id="gallery-grid">
                 <!-- Photos load here -->
             </div>
@@ -126,9 +124,54 @@
       </div>
     </div>
     <!-- JS CODE -->
+<!-- footer -->
+   <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Design Studio Delhi</h3>
+                    <p>Let's make beautiful spaces from 2020</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank">Facebook</a>
+                        <a href="#" target="_blank">Instagram</a>
+                        <a href="#" target="_blank">WhatsApp</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Link</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Residential Design</a></li>
+                        <li><a href="#services">Commercial Design</a></li>
+                        <li><a href="#services">Kitchen Design</a></li>
+                        <li><a href="#services">Office Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Lajpat Nagar II, New Delhi</p>
+                    <p>+91 8305198886</p>
+                    <p>rohit@rohit-singh.me</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Design Studio Delhi.  All rights reserved।</p>
+            </div>
+        </div>
+    </footer>
+
     <script>
     // Images folder me photo1.jpg ... photo50.jpg (images folder same level par ho .html file ke sath)
-    const photos = Array.from({length:48}, (_,i)=>`image/photo${i+1}.jpg`);
+    const photos = Array.from({length:50}, (_,i)=>`image/photo${i+1}.jpg`);
     let showingAll = false;
 
     // Render home preview (12 photos) or ALL (50)

@@ -689,7 +689,7 @@ select.form-control {
   bottom: 0;
   left: 0;
 
-  background-image: url("img/5985354.webp");
+  background-image: url("Image/5985354.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -854,7 +854,7 @@ select.form-control {
 }
 
 /* Portfolio Section */
-.portfolio {
+/* .portfolio {
   padding: 80px 0;
   background: var(--color-surface);
 }
@@ -935,7 +935,7 @@ select.form-control {
 .portfolio-overlay p {
   margin: 0;
   opacity: 0.9;
-}
+} */
 
 
 /* Testimonials Section */
