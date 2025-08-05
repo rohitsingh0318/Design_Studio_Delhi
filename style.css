@@ -715,12 +715,12 @@ select.form-control {
   font-size: 50px;
   font-weight: var(--font-weight-bold);
   margin-bottom: var(--space-16);
-  /* color: white; */
-  background: linear-gradient(to right,white, red, yellow, green, blue);
-    -webkit-background-clip: text;
+  color: white;
+  /* background: linear-gradient(to right,white, red, yellow, green, blue); */
+    /* -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    display: inline-block; /* या `block` अगर आपको टेक्स्ट के नीचे ग्रेडिएंट दिखाना है */
-    background-clip: text;
+    display: inline-block; 
+    background-clip: text; */
 }
 
 .hero-subtitle {
@@ -937,60 +937,6 @@ select.form-control {
   opacity: 0.9;
 }
 
-/* Calculator Section */
-/* .calculator {
-  padding: 80px 0;
-  background: var(--color-background);
-}
-
-.calculator-form {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.form-row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: var(--space-16);
-  margin-bottom: var(--space-16);
-}
-
-.cost-result {
-  margin-top: var(--space-24);
-  padding: var(--space-24);
-  background: var(--color-secondary);
-  border-radius: var(--radius-lg);
-}
-
-.cost-result h3 {
-  margin-bottom: var(--space-16);
-  color: var(--color-primary);
-}
-
-.cost-breakdown {
-  margin-bottom: var(--space-16);
-}
-
-.cost-item {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: var(--space-8);
-  padding: var(--space-8) 0;
-}
-
-.cost-item.total {
-  border-top: 2px solid var(--color-primary);
-  padding-top: var(--space-12);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-lg);
-}
-
-.cost-note {
-  font-size: var(--font-size-sm);
-  color: var(--color-text-secondary);
-  font-style: italic;
-  margin: 0;
-} */
 
 /* Testimonials Section */
 .testimonials {

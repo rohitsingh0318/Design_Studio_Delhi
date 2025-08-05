@@ -6,6 +6,78 @@
     <title>Design Studio Delhi - your dream home</title>
     <meta name="description" content="Premium Interior Design Services in Delhi - For Home, Office & Commercial Spaces">
     <link rel="stylesheet" href="style.css">
+    <style>
+      /* ------ Gallery and Modal Styles ------ */
+    .gallery-section {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 15px;
+    }
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 16px;
+    }
+    .gallery-grid img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        cursor: pointer;
+        transition: box-shadow 0.2s;
+    }
+    .gallery-grid img:hover {
+        box-shadow: 0 6px 16px rgba(94,46,255,0.18);
+    }
+    .see-all-btn {
+        background: #5e2eff;
+        color: #fff;
+        padding: 12px 20px;
+        text-decoration: none;
+        border-radius: 4px;
+        display: inline-block;
+        margin: 26px 0 15px 0;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    /* Modal Styling */
+    .modal-bg {
+        display: none;
+        position: fixed;
+        top: 0; left: 0; width: 100vw; height: 100vh;
+        background: rgba(30,30,30,.7);
+        align-items: center;
+        justify-content: center;
+        z-index:1001;
+    }
+    .modal-bg.active { display: flex;}
+    .modal-content {
+        background:#fff;
+        padding:15px;
+        border-radius:10px;
+        /* max-width:90vw;
+        max-height:90vh; */
+        box-shadow: 0 8px 48px rgba(54,54,154,0.08);
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        position: relative;
+        width: 80%;
+    }
+    .modal-content img { max-width:80vw; max-height:60vh; border-radius:8px;}
+    .modal-close {
+        position: absolute; top: 10px; right: 12px;
+        background: #5e2eff; color: #fff; border: none; border-radius: 50%;
+        width: 36px; height: 36px; font-size: 1.5em; cursor: pointer;
+        display: flex; align-items:center; justify-content:center;
+        z-index:10;
+    }
+    @media (max-width: 600px) {
+      .gallery-grid img {height:120px;}
+      .gallery-section {margin-top:10px;}
+    }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -19,7 +91,8 @@
                 <ul class="nav-menu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+                    <li><a href="copy.html">Gallery</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#contact">Contact US</a></li>
                     <li><a href="bookingnow.html" class="btn btn--primary btn--sm" id="bookingnowbtn">Book Now</a></li>
@@ -98,151 +171,6 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h2 class="section-title">Our Portfolio</h2>
-            <div class="portfolio-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="residential">Commercial</button>
-                <button class="filter-btn" data-filter="commercial">Resturent</button>
-                <button class="filter-btn" data-filter="kitchen">Kitchen</button>
-                <button class="filter-btn" data-filter="bedroom">Badroom</button>
-                <button class="filter-btn" data-filter="living-room">Living room</button>
-            </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-item" data-category="residential">
-                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Modern Delhi Apartment">
-                    <div class="portfolio-overlay">
-                        <h3>Modern Delhi Apartment</h3>
-                        <p>Contemporary 3BHK Apartment in South Delhi</p>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="restaurant">
-                    <img src="img/kitchen-design.jpg" alt="Luxury Kitchen Design">
-                    <div class="portfolio-overlay">
-                        <h3>luxury kitchen design</h3>
-                        <p>Premium Modular Kitchen with Island</p>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="residential">
-                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Corporate Office">
-                    <div class="portfolio-overlay">
-                        <h3>Corporate Office</h3>
-                        <p>Modern Office Spaces in Gurugram</p>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="bedroom">
-                    <img src="img/modern-bedroom.jpg" alt="Master Bedroom Suite">
-                    <div class="portfolio-overlay">
-                        <h3>Master bedroom suite</h3>
-                        <p>Elegant master bedroom with walk-in closet</p>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="living-room">
-                    <img src="img/living-room.jpg" alt="Stylish Living Room">
-                    <div class="portfolio-overlay">
-                        <h3>Stylish living room</h3>
-                        <p>contemporary living room with modern furniture</p>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="commercial">
-                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Boutique Restaurant">
-                    <div class="portfolio-overlay">
-                        <h3>Restaurant</h3>
-                        <p>Upscale restaurant interior in Delhi</p>
-                    </div>
-                </div>
-                <!-- new -->
-                 <div class="portfolio-item" data-category="bedroom">
-                    <img src="img/dining-room.jpg" alt="Master Bedroom Suite">
-                    <div class="portfolio-overlay">
-                        <h3>Master dining-room </h3>
-                        <p>Elegant master bedroom with walk-in closet</p>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="living-room">
-                    <img src="img/industrial-style-living-room.jpg" alt="Stylish Living Room">
-                    <div class="portfolio-overlay">
-                        <h3>Stylish living room</h3>
-                        <p>contemporary living room with modern furniture</p>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="kitchen">
-                    <img src="img/modern-modular-kitchen.jpg" alt="Boutique Restaurant">
-                    <div class="portfolio-overlay">
-                        <h3>kitchen-design</h3>
-                        <p>Upscale restaurant interior in Delhi</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Cost Calculator -->
-    <!-- <section id="calculator" class="calculator">
-        <div class="container">
-            <h2 class="section-title">कॉस्ट कैलकुलेटर</h2>
-            <div class="calculator-form card">
-                <div class="card__body">
-                    <form id="costForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label class="form-label">प्रॉपर्टी प्रकार</label>
-                                <select class="form-control" id="propertyType">
-                                    <option value="residential">आवासीय</option>
-                                    <option value="commercial">वाणिज्यिक</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">कमरों की संख्या</label>
-                                <select class="form-control" id="rooms">
-                                    <option value="1bhk">1BHK</option>
-                                    <option value="2bhk">2BHK</option>
-                                    <option value="3bhk">3BHK</option>
-                                    <option value="4bhk">4BHK+</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label class="form-label">कुल क्षेत्रफल (वर्ग फुट में)</label>
-                                <input type="number" class="form-control" id="area" placeholder="उदाहरण: 1000">
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">डिज़ाइन स्टाइल</label>
-                                <select class="form-control" id="style">
-                                    <option value="modern">आधुनिक</option>
-                                    <option value="traditional">पारंपरिक</option>
-                                    <option value="contemporary">समकालीन</option>
-                                    <option value="minimalist">न्यूनतम</option>
-                                </select>
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn--primary btn--full-width" onclick="calculateCost()">अनुमानित लागत की गणना करें</button>
-                    </form>
-                    <div id="costResult" class="cost-result hidden">
-                        <h3>अनुमानित लागत</h3>
-                        <div class="cost-breakdown">
-                            <div class="cost-item">
-                                <span>बेस कॉस्ट:</span>
-                                <span id="baseCost">₹0</span>
-                            </div>
-                            <div class="cost-item">
-                                <span>डिज़ाइन फीस:</span>
-                                <span id="designFee">₹0</span>
-                            </div>
-                            <div class="cost-item total">
-                                <span>कुल अनुमानित लागत:</span>
-                                <span id="totalCost">₹0</span>
-                            </div>
-                        </div>
-                        <p class="cost-note">*यह केवल अनुमान है। सटीक कोटेशन के लिए कृपया हमसे संपर्क करें।</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <!-- Testimonials -->
     <section id="testimonials" class="testimonials">
